@@ -30,7 +30,7 @@ export default function PartnershipsScreen() {
   // Simulate fetching data from backend
   useEffect(() => {
     setTimeout(() => {
-      setOpportunities(mockOpportunities); // Replace this with fetch() later
+      setOpportunities(mockOpportunities); // use real data later
       setLoading(false);
     }, 1000);
   }, []);

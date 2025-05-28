@@ -30,7 +30,7 @@ const BookingScreen = () => {
       `Thank you ${name}, your appointment with ${department} is set for ${date.toLocaleString()}`
     );
 
-    // You can add backend/API call here
+    // add backend/API call here
   };
 
   return (

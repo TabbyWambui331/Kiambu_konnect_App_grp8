@@ -1,25 +1,23 @@
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import homeScreen from './screens/homescreenomeScreen';
-import Logscreen from './screens/Logscreen';
-import bookingappointmentsscreen from './screens/bookingappointmensscreen';
-import partnershipsScreen from './screens/partnershipsScreen';
-import EventScreen from './screens/EventScreen';
-import chatbotScreen from './screens/chatbotscreenhatbotScreen';
+import HomeScreen from './screens/HomeSScreen';
+import LogScreen from './screens/LogSScreen';
+import BookingScreen from './screens/BookingSScreen';
+import PartnershipScreen from './screens/PartnershipSScreen';
+import ChatbotScreen from './screens/ChatbotSScreen';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Welcome">
+      <Stack.Navigator initialRouteName="Logs">
         <Stack.Screen name="Logs" component={LogScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="home" component={HomeScreen} />
-        <Stack.Screen name="bookAppointments" component={BookingScreen} />
-        <Stack.Screen name="partnerships" component={PartnershipsScreen} />
-        <Stack.Screen name="Events" component={EventScreen} />
-        <Stack.Screen name="chatbot" component={ChatbotScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Booking" component={BookingScreen} />
+        <Stack.Screen name="Partnership" component={PartnershipScreen} />
+        <Stack.Screen name="Chatbot" component={ChatbotScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

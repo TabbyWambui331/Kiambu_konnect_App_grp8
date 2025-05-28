@@ -1,11 +1,12 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from './screens/HomeSScreen';
-import LogScreen from './screens/LogSScreen';
-import BookingScreen from './screens/BookingSScreen';
-import PartnershipScreen from './screens/PartnershipSScreen';
-import ChatbotScreen from './screens/ChatbotSScreen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import HomeScreen from './screens/HomeScreen';
+import LogScreen from './screens/LogScreen';
+import BookingScreen from './screens/BookingScreen';
+import PartnershipScreen from './screens/PartnershipScreen';
+import ChatbotScreen from './screens/ChatbotScreen';
 
 const Stack = createNativeStackNavigator();
 

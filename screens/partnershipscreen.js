@@ -23,7 +23,7 @@ const mockOpportunities = [
   },
 ];
 
-const PartnershipsScreen = () => {
+export default function PartnershipsScreen() {
   const [opportunities, setOpportunities] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -62,9 +62,7 @@ const PartnershipsScreen = () => {
       )}
     </View>
   );
-};
-
-export default PartnershipsScreen;
+}
 
 const styles = StyleSheet.create({
   container: {

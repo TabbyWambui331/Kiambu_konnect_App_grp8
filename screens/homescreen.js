@@ -1,21 +1,24 @@
 // HomeScreen.js
 
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Ionicons, FontAwesome5, MaterialIcons, Entypo } from '@expo/vector-icons';
+// This is the HomeScreen component for the Kiambu-u-Konnect app.
+// It provides a grid layout with icons and labels for navigating to different sections of the app.
 
-const HomeScreen = ({ navigation }) => {
+import React from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Ionicons, FontAwesome5, MaterialIcons, Entypo } from '@expo/vector-icons';
+updated
+export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Welcome to Kiambu-u-Konnect</Text>
 
       <View style={styles.grid}>
-        <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('BookAppointment')}>
+        <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Booking')}>
           <FontAwesome5 name="calendar-check" size={32} color="#2e86de" />
           <Text style={styles.label}>Appointments</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Partnerships')}>
+        <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Partnership')}>
           <Ionicons name="handshake-outline" size={32} color="#20bf6b" />
           <Text style={styles.label}>Partnerships</Text>
         </TouchableOpacity>
@@ -32,9 +35,7 @@ const HomeScreen = ({ navigation }) => {
       </View>
     </View>
   );
-};
-
-export default HomeScreen;
+}
 
 const styles = StyleSheet.create({
   container: {

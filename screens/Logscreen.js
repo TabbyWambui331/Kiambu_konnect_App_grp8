@@ -9,7 +9,7 @@ import {
   Image
 } from 'react-native';
 
-const WelcomeScreen = ({ navigation }) => {
+export function LogScreen({ navigation }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -33,7 +33,7 @@ const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/logo.png')} // Optional app logo
+        source={require('../assets/logo.png')} //we are going to add app logo
         style={styles.logo}
       />
 
@@ -71,7 +71,7 @@ const WelcomeScreen = ({ navigation }) => {
   );
 };
 
-export default WelcomeScreen;
+export default LogScreen;
 
 const styles = StyleSheet.create({
   container: {
